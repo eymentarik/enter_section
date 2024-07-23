@@ -1,0 +1,681 @@
+/* LOGOLAR */
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    
+  
+  }
+  
+  .containerLogo{
+    height: 500px;
+    margin-bottom: 250px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+   
+    
+  }
+  
+  
+    
+    .div1 { grid-area: 3 / 6 / 4 / 7; }
+    .div2 { grid-area: 3 / 7 / 4 / 8;
+      top: 50px;
+      right:30px;
+    }
+    .div3 { grid-area: 3 / 5 / 4 / 6;
+      top: 50px;
+      left:40px
+    }
+    .div4 { grid-area: 2 / 8 / 3 / 9; 
+      top: 170px;
+      right:60px;
+      width: 130px;
+    }
+    .div5 { grid-area: 1 / 7 / 2 / 8;
+      top: 190px;
+      left: 80px;
+      width: 80px;
+    }
+    .div6 { grid-area: 1 / 10 / 2 / 11;
+      top: 200px;
+      right: 190px;
+      width: 100px;
+    }
+    .div7 { grid-area: 2 / 10 / 3 / 11;
+      top: 260px;
+      right: 80px;
+      width: 100px;
+    }
+    .div8 { grid-area: 4 / 8 / 5 / 9;
+      top: -30px;
+      right: 80px;
+      width: 100px;
+    }
+    .div9 { grid-area: 4 / 9 / 5 / 10;
+      top: -40px;
+      right: 80px;
+      width: 60px;
+    }
+    .div10 { grid-area: 2 / 4 / 3 / 5;
+      top: 160px;
+      left: 50px;
+      width: 140px;
+    }
+    .div11 { grid-area: 4 / 4 / 5 / 5;
+      top:-50px;
+      left: 80px;
+      width: 100px;
+    }
+    .div12 { grid-area: 1 / 5 / 2 / 6;
+      top: 200px;
+      left: 50px;
+      width: 60px;
+    }
+    .div13 { grid-area: 3 / 3 / 4 / 4;
+      top: 150px;
+      left: 60px;
+      width: 60px;
+    }
+    .div14 { grid-area: 4 / 2 / 5 / 3;
+      left: 150px;
+      width: 60px;
+    }
+    .div15 { grid-area: 1 / 2 / 2 / 3;
+      top: 200px;
+      left: 100px;
+      width: 100px;
+    }
+    .div16 { grid-area: 1 / 5 / 2 / 8;
+     margin-top: 40px;
+    }
+  
+  
+  
+  
+  .thinH1{  
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:300;
+  font-style: normal;
+  text-align: center;
+  text-shadow: black;;
+  text-shadow: 1px 2px 16px rgba(0,0,0,0.54);
+  background-color: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  
+  
+  
+  
+  
+  /* LOGO Ortak Kodlar */
+  
+  .overlay {
+      position: absolute;
+      
+      left: 50%;
+      transform: translateX(-50%);
+      
+      padding: 10px 20px;
+      border-radius: 20px;
+      opacity: 0; /* başlangıçta görünmez */
+      transition: opacity 0.3s ease-in-out;
+      
+    }
+    
+    .logo:hover .overlay {
+      opacity: 1; /* imleç logonun üzerine geldiğinde görünür hale gelsin */
+    }
+    
+    .domainDecoration {
+      text-decoration: none;
+      color:white;
+    }
+    
+    
+    
+    @keyframes myAnim {
+        100% {
+            transform: scale(1.05);
+        }
+    
+    }
+    
+    .logo img {
+      transition: box-shadow 0.3s ease; /* Gölgelendirme efektine geçiş ekleyin */
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px; /* Başlangıçta gölge yok */
+    }
+    
+    
+    
+    @keyframes shadow-grow {
+      0% {
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* Gölge başlangıcı */
+      }
+      100% {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Gölge büyüklüğü */
+      }
+    }
+  
+    /* paucek and lage */
+    
+    .img1:hover{
+      animation: myAnim 0.5s ease 0s 1 normal forwards;
+      height: 230px;
+      width: 230px;
+      border-radius: 100%;
+    }
+    
+    .img1{
+      
+      height: 230px;
+      width: 230px;
+      border-radius: 100%;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+      
+    
+    }
+    
+    .logo:hover .img1 {
+      box-shadow: 0 0 80px 50px rgb(167, 35, 35); /* Gölgelendirme efekti - imleç logonun üzerine gelince görünür olacak */
+    }
+    
+    
+    
+    .overlay1 {
+      bottom: -20%; /* logo altında biraz aşağıda görünsün */
+      background-color: rgba(155, 155, 155, 0.5); /* yarı saydam bir arkaplan */
+      
+    }
+    
+    .logo:hover .overlay1 {
+      opacity: 1; /* imleç logonun üzerine geldiğinde görünür hale gelsin */
+    }
+    
+    
+    /* oshuga */
+    
+    .img2:hover{
+      animation: myAnim 0.5s ease 0s 1 normal forwards;
+      height: 210px;
+      width: 210px;
+      border-radius: 100%;
+    }
+    
+    .img2{
+      
+      height: 210px;
+      width: 210px;
+      border-radius: 100%;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+    
+    .logo:hover .img2 {
+      box-shadow: 0 0 100px rgb(233, 198, 108); /* Gölgelendirme efekti - imleç logonun üzerine gelince görünür olacak */
+    }
+    
+    .overlay2 {
+      bottom: -12%; /* logo altında biraz aşağıda görünsün */
+      background-color: rgba(155, 155, 155, 0.5); /* yarı saydam bir arkaplan */
+      
+    }
+    
+    .logo:hover .overlay2 {
+      opacity: 1; /* imleç logonun üzerine geldiğinde görünür hale gelsin */
+    }
+    
+    /* lp browvn */
+    
+    .img3:hover{
+      animation: myAnim 0.5s ease 0s 1 normal forwards;
+      height: 210px;
+      width: 210px;
+      border-radius: 100%;
+    }
+    
+    .img3{
+      
+      height: 210px;
+      width: 210px;
+      border-radius: 100%;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+    
+    .logo:hover .img3 {
+      box-shadow: 0 0 100px 40px rgb(30, 42, 100) /* Gölgelendirme efekti - imleç logonun üzerine gelince görünür olacak */
+    }
+    
+    .overlay3 {
+      bottom: -12%; /* logo altında biraz aşağıda görünsün */
+      background-color: rgba(155, 155, 155, 0.5); /* yarı saydam bir arkaplan */
+      
+    }
+    
+    .logo:hover .overlay3 {
+      opacity: 1; /* imleç logonun üzerine geldiğinde görünür hale gelsin */
+    }
+    
+    /* canine */
+    
+    .img4:hover{
+      animation: myAnim 0.5s ease 0s 1 normal forwards;
+      height: 130px;
+      width: 130px;
+      border-radius: 100%;
+    }
+    
+    .img4{
+      
+      height: 130px;
+      width: auto;
+      border-radius: 100%;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+      
+    }
+    
+    .logo:hover .img4 {
+      box-shadow: 0 0 40px 10px rgb(27, 21, 80) /* Gölgelendirme efekti - imleç logonun üzerine gelince görünür olacak */
+    }
+    
+    .overlay4 {
+      bottom:-30px; /* logo altında biraz aşağıda görünsün */
+      background-color: rgba(155, 155, 155, 0.5); /* yarı saydam bir arkaplan */
+      font-size: small;
+      left:75px;
+    }
+    
+    .logo:hover .overlay4 {
+      opacity: 1; /* imleç logonun üzerine geldiğinde görünür hale gelsin */
+    }
+    
+    
+    /* logo text */
+    
+    .img5:hover{
+      animation: myAnim 0.5s ease 0s 1 normal forwards;
+      height: 100px;
+      width: 100px;
+      border-radius: 100%;
+    }
+    
+    .img5{
+      
+      height: 100px;
+      width: 100px;
+      border-radius: 100%;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+    
+    .logo:hover .img5 {
+      box-shadow: 0 0 40px 20px rgb(34, 34, 34) /* Gölgelendirme efekti - imleç logonun üzerine gelince görünür olacak */
+    }
+    
+    .overlay5 {
+      top: 110px; /* logo altında biraz aşağıda görünsün */
+      background-color: rgba(155, 155, 155, 0.5); /* yarı saydam bir arkaplan */
+      width: 100px;
+      font-size: small;
+      left:55px;
+      text-align: center;
+    }
+    
+    .logo:hover .overlay5 {
+      opacity: 1; /* imleç logonun üzerine geldiğinde görünür hale gelsin */
+    }
+    
+    
+    /* barbecue */
+    
+    .img6:hover{
+      animation: myAnim 0.5s ease 0s 1 normal forwards;
+      height: 80px;
+      width: 80px;
+      border-radius: 100%;
+    }
+    
+    .img6{
+      
+      height: 80px;
+      width: 80px;
+      border-radius: 100%;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+    
+    .logo:hover .img6 {
+      box-shadow: 0 0 70px 20px rgb(157, 157, 157) /* Gölgelendirme efekti - imleç logonun üzerine gelince görünür olacak */
+    }
+    
+    .overlay6 {
+      top: 85px; /* logo altında biraz aşağıda görünsün */
+      background-color: rgba(155, 155, 155, 0.5); /* yarı saydam bir arkaplan */
+      width: 100px;
+      font-size: small;
+      left: 40px;
+      text-align: center;
+    }
+    
+    .logo:hover .overlay6 {
+      opacity: 1; /* imleç logonun üzerine geldiğinde görünür hale gelsin */
+    }
+    
+    
+    
+    /* montventure */
+    
+    .img7:hover{
+      animation: myAnim 0.5s ease 0s 1 normal forwards;
+      height: 60px;
+      width: 60px;
+      border-radius: 100%;
+    }
+    
+    .img7{
+      
+      height: 60px;
+      width: 60px;
+      border-radius: 100%;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+    
+    .logo:hover .img7 {
+      box-shadow: 0 0 30px 10px rgb(6, 156, 108) /* Gölgelendirme efekti - imleç logonun üzerine gelince görünür olacak */
+    }
+    
+    .overlay7 {
+      top: 65px; /* logo altında biraz aşağıda görünsün */
+      background-color: rgba(155, 155, 155, 0.5); /* yarı saydam bir arkaplan */
+      left: 35px;
+      font-size: small;
+    }
+    
+    .logo:hover .overlay7 {
+      opacity: 1; /* imleç logonun üzerine geldiğinde görünür hale gelsin */
+      
+    }
+    
+    
+    /* green tree */
+    
+    .img8:hover{
+      animation: myAnim 0.5s ease 0s 1 normal forwards;
+      height: 100px;
+      width: 100px;
+      border-radius: 100%;
+    }
+    
+    .img8{
+      
+      height: 100px;
+      width: 100px;
+      border-radius: 100%;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+    
+    .logo:hover .img8 {
+      box-shadow: 0 0 100px 30px rgb(64, 162, 62) /* Gölgelendirme efekti - imleç logonun üzerine gelince görünür olacak */
+    }
+    
+    .overlay8 {
+      top: 105px; /* logo altında biraz aşağıda görünsün */
+      background-color: rgba(109, 109, 109, 0.7); /* yarı saydam bir arkaplan */
+      width: 60px;
+      font-size: small;
+      left: 55px;
+      text-align: center;
+      
+      
+    }
+    
+    .logo:hover .overlay8 {
+      opacity: 1; /* imleç logonun üzerine geldiğinde görünür hale gelsin */
+    }
+    
+    /* red bird */
+    
+    .img9:hover{
+      animation: myAnim 0.5s ease 0s 1 normal forwards;
+      height: 100px;
+      width: 100px;
+      border-radius: 100%;
+    }
+    
+    .img9{
+      
+      height: 100px;
+      width: 100px;
+      border-radius: 100%;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+    
+    .logo:hover .img9 {
+      box-shadow: 0 0 70px 40px rgb(164, 11, 9) /* Gölgelendirme efekti - imleç logonun üzerine gelince görünür olacak */
+    }
+    
+    .overlay9 {
+      top: 110px; /* logo altında biraz aşağıda görünsün */
+      background-color: rgba(155, 155, 155, 0.5); /* yarı saydam bir arkaplan */
+      width: 120px;
+      font-size: small;
+      left: 55px;
+      text-align: center;
+    }
+    
+    .logo:hover .overlay9 {
+      opacity: 1; /* imleç logonun üzerine geldiğinde görünür hale gelsin */
+    }
+    
+    /* black gold logo */
+    
+    .img10:hover{
+      animation: myAnim 0.5s ease 0s 1 normal forwards;
+      height: 140px;
+      width: 140px;
+      border-radius: 100%;
+    }
+    
+    .img10{
+      
+      height: 140px;
+      width: 140px;
+      border-radius: 100%;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+    
+    .logo:hover .img10 {
+      box-shadow: 0 0 100px 60px rgb(143, 107, 0) /* Gölgelendirme efekti - imleç logonun üzerine gelince görünür olacak */
+    }
+    
+    .overlay10 {
+      top: 145px; /* logo altında biraz aşağıda görünsün */
+      background-color: rgba(92, 92, 92, 0.5); /* yarı saydam bir arkaplan */
+      width: 100px;
+      font-size: small;
+      left: 65px;
+      text-align: center;
+    }
+    
+    .logo:hover .overlay10 {
+      opacity: 1; /* imleç logonun üzerine geldiğinde görünür hale gelsin */
+    }
+    
+    /* chai & chat*/
+    
+    .img11:hover{
+      animation: myAnim 0.5s ease 0s 1 normal forwards;
+      height: 100px;
+      width: 100px;
+      border-radius: 100%;
+    }
+    
+    .img11{
+      
+      height: 100px;
+      width: 100px;
+      border-radius: 100%;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+    
+    .logo:hover .img11 {
+      box-shadow: 0 0 70px 40px rgb(185, 124, 11) /* Gölgelendirme efekti - imleç logonun üzerine gelince görünür olacak */
+    }
+    
+    .overlay11 {
+      top: 110px; /* logo altında biraz aşağıda görünsün */
+      background-color: rgba(155, 155, 155, 0.5); /* yarı saydam bir arkaplan */
+      width: 110px;
+      font-size: small;
+      left: 50px;
+      text-align: center;
+    }
+    
+    .logo:hover .overlay11 {
+      opacity: 1; /* imleç logonun üzerine geldiğinde görünür hale gelsin */
+    }
+    
+    
+    /* fauget */
+    
+    .img12:hover{
+      animation: myAnim 0.5s ease 0s 1 normal forwards;
+      height: 60px;
+      width: 60px;
+      border-radius: 100%;
+    }
+    
+    .img12{
+      
+      height: 60px;
+      width: 60px;
+      border-radius: 100%;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+    
+    .logo:hover .img12 {
+      box-shadow: 0 0 60px 30px rgb(11, 59, 4) /* Gölgelendirme efekti - imleç logonun üzerine gelince görünür olacak */
+    }
+    
+    .overlay12 {
+      top: 67px; /* logo altında biraz aşağıda görünsün */
+      background-color: rgba(155, 155, 155, 0.5); /* yarı saydam bir arkaplan */
+      left: 35px;
+      font-size: x-small;
+    }
+    
+    .logo:hover .overlay12 {
+      opacity: 1; /* imleç logonun üzerine geldiğinde görünür hale gelsin */
+      
+      
+    }
+    
+    /* paucek mini */
+    
+    .img13:hover{
+      animation: myAnim 0.5s ease 0s 1 normal forwards;
+      height: 60px;
+      width: 60px;
+      border-radius: 100%;
+    }
+    
+    .img13{
+      
+      height: 60px;
+      width: 60px;
+      border-radius: 100%;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+    
+    .logo:hover .img13 {
+      box-shadow: 0 0 50px 20px rgb(172, 50, 1) /* Gölgelendirme efekti - imleç logonun üzerine gelince görünür olacak */
+    }
+    
+    .overlay13 {
+      top: 65px; /* logo altında biraz aşağıda görünsün */
+      background-color: rgba(155, 155, 155, 0.5); /* yarı saydam bir arkaplan */
+      left: 30px;
+      font-size: x-small;
+      
+    }
+    
+    .logo:hover .overlay13 {
+      opacity: 1; /* imleç logonun üzerine geldiğinde görünür hale gelsin */
+      
+    }
+    
+    /* start red */
+    
+    .img14:hover{
+      animation: myAnim 0.5s ease 0s 1 normal forwards;
+      height: 60px;
+      width: 60px;
+      border-radius: 100%;
+    }
+    
+    .img14{
+      
+      height: 60px;
+      width: 60px;
+      border-radius: 100%;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+    
+    .logo:hover .img14 {
+      box-shadow: 0 0 30px 10px rgb(255, 8, 8) /* Gölgelendirme efekti - imleç logonun üzerine gelince görünür olacak */
+    }
+    
+    .overlay14 {
+      top: 65px; /* logo altında biraz aşağıda görünsün */
+      background-color: rgba(155, 155, 155, 0.5); /* yarı saydam bir arkaplan */
+      width: 60px;
+      left: 30px;
+      font-size: x-small;
+    }
+    
+    .logo:hover .overlay14 {
+      opacity: 1; /* imleç logonun üzerine geldiğinde görünür hale gelsin */
+      
+      
+    }
+    
+    /* red wolf */
+    
+    .img15:hover{
+      animation: myAnim 0.5s ease 0s 1 normal forwards;
+      height: 100px;
+      width: 100px;
+      border-radius: 100%;
+    }
+    
+    .img15{
+      
+      height: 100px;
+      width: 100px;
+      border-radius: 100%;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    }
+    
+    .logo:hover .img15 {
+      box-shadow: 0 0 70px 30px rgb(206, 47, 47) /* Gölgelendirme efekti - imleç logonun üzerine gelince görünür olacak */
+    }
+    
+    .overlay15 {
+      top: 105px; /* logo altında biraz aşağıda görünsün */
+      background-color: rgba(155, 155, 155, 0.5); /* yarı saydam bir arkaplan */
+      width: auto;
+      left: 50px;
+      font-size: x-small;
+      
+    }
+    
+    .logo:hover .overlay15 {
+      opacity: 1; /* imleç logonun üzerine geldiğinde görünür hale gelsin */
+      
+    }
+  
